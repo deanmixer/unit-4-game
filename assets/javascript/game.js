@@ -19,7 +19,7 @@ const jarJar = {
 	maxHitPoints: 150,
 	hitPoints: 150,
 	attackPower: 20,
-	counterPower: 20,
+	counterPower: 15,
 	attackSound() {
 
 	},
@@ -54,8 +54,8 @@ const wicket = {
 	name: "Wicket",
 	maxHitPoints: 200,
 	hitPoints: 200,
-	attackPower: 15,
-	counterPower: 15,
+	attackPower: 10,
+	counterPower: 25,
 	attackSound() {
 
 	},
@@ -142,6 +142,8 @@ let enemyObjAssignment = function() {
 	enemyObj = Object.assign({}, wicket);
 	}	
 }
+
+//Tried to turn the ObjAssignment function into a smaller function, but it would only assign the object to fillerObj
 
 // let objAssignment = function (filler, fillerObj) {
 // 	if (filler === "jarjar") {
@@ -248,7 +250,6 @@ let chooseAgain = function () {
 	$(".combatButton").addClass("grayscale");
 	$(".keepClear").removeClass("hide");
 	winCounter ++;
-	console.log(winCounter);
 };
 
 let winCheck = function() {
