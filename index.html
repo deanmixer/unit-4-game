@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Star Wars RPG</title>
+    <link rel="shortcut icon" type="image/png" href="https://cdn2.iconfinder.com/data/icons/starwars/icons/128/DarthVader.png" />
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Hind" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<h1>STAR WARS RPG</h1>
+	</header>
+	<div class="chooser">
+		<h2>Choose your hero:</h2>
+		<div class="charSelect">
+			<div class="charCard" id="jarjar">
+				<img src="assets/images/jarjar.jpeg" alt="Jar Jar" class="cardFace">
+				<p class="charName">Jar Jar Binks</p>
+				<p id="jarJarHealth">150</p>
+			</div>
+			<div class="charCard" id="maz">
+				<img src="assets/images/mazkanata.jpg" alt="Maz" class="cardFace">
+				<p class="charName">Maz Kanata</p>
+				<p id="mazHealth">120</p>
+			</div>
+			<div class="charCard" id="watto">
+				<img src="assets/images/watto.jpg" alt="Watto" class="cardFace">
+				<p class="charName">Watto</p>
+				<p id="wattoHealth">85</p>
+			</div>
+			<div class="charCard" id="wicket">
+				<img src="assets/images/wicket.png" alt="Wicket" class="cardFace">
+				<p class="charName">Wicket</p>
+				<p id="wicketHealth">200</p>
+			</div>
+		</div>
+	</div>
+	<div class="maincontent hide">
+		<div class="attackOptions">
+			<div class="borderTest">	
+				<h2>Your Character</h2>
+					<div id="yourChar"></div>
+					<p id="playerMessage"></p>
+					<p id="chooseAgain"></p>
+			</div>
+			<div class="borderTest">
+<!-- 				<h2>Fight Section</h2> -->
+					<div id="fightSection">
+						<img src="assets/images/fight.png" alt="Fight" class="combatButton grayscale">
+					</div>
+			</div>
+			<div class="borderTest">
+				<h2>Defender</h2>
+					<div id="defender"></div>
+					<p id="enemyMessage"></p>
+			</div>
+		</div>
+		<div class="centered keepClear">
+			<h2>Enemies Available to Attack</h2>
+			<div id="attackOptions"></div> 
+		</div>
+	</div>
+	<div class="gameover hide">
+		<p id="bigLose">GAME OVER</p>
+		<button class="resetButton">Try again?</button>
+	</div>
+
+	<div class="winner hide">
+		<p id="bigWin">YOU WIN!</p>
+		<button class="resetButton">Play again!</button>
+	</div>
+
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body> 
+</html>

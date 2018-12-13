@@ -1,0 +1,233 @@
+html {
+    background-image: url("../images/background.jpg");
+/*    background-size: 100%;*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: cover;*/
+    background-color: black;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.hide {
+    display: none;
+}
+
+h1 {
+    font-color: black;
+    font-family: 'Bungee', cursive;
+    text-shadow: -1px 0 #ffe63b, 0 3px #ffe63b, 3px 0 #ffe63b, 0 -1px #ffe63b;
+    font-size: 5em;
+}
+
+h2 {
+    font-family: 'Bungee', cursive;
+    font-size: 1.7em;
+    margin-top: 15px;
+    text-align: center;
+}
+
+p {
+    font-family: 'Hind', sans-serif;
+/*    color: white;*/
+}
+
+.maincontent {
+    background-color: white;
+/*    opacity: 0.8;*/
+    margin: 0% 12% 0% 12%;
+    padding-top: 5px;
+    padding-right: 2%;
+    padding-left: 2%;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+
+.chooser {
+    background-color: white;
+    margin: auto;
+    max-width: 900px;
+    padding-top: 5px;
+    padding-bottom: 18px;
+    padding-right: 2%;
+    padding-left: 2%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.charSelect {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.attackOptions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.charCard {
+    position: relative;
+    max-width: 200px;
+    height: 208px;
+    margin: auto;
+    margin-top: 15px;
+/*    width: 50%;*/
+/*    margin: 10px 10px 0px 10px;*/
+/*    margin-right: 20px;
+    margin-bottom: 35px;*/
+}
+
+.centered {
+    padding-top: 30px;
+    margin: auto;
+    width: 70%;
+}
+
+.cardFace {
+    width: 100%;
+    height: 198px;
+    object-fit: cover;
+    border-color: yellow;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 10px;
+}
+
+.combatButton {
+    max-width: 200px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 110px;
+    margin-bottom: 20px;
+}
+
+.borderTest {
+    position: relative;
+    width: 32%;
+/*    border-color: black;
+    border-style: solid;
+    border-width: 5px;*/
+}
+
+.grayscale {
+    filter: grayscale(100%);
+    opacity: 0.7;    
+}
+
+p.charName {
+    background-color: white;
+    margin: auto;
+    padding: 4px 0px 4px 0px;
+    opacity: 0.8;
+    text-align: center;
+    font-family: 'Hind', sans-serif;
+    font-size: 1.1em;
+    position: absolute;
+/*    width: 300px;*/
+    width: 100%;
+    right: -5px;
+    bottom: 2px;
+/*    border-color: #dddddd;
+    border-style: solid;
+    border-width: 0px 1px 0px 1px;*/
+}
+
+#jarJarHealth, #mazHealth, #wattoHealth, #wicketHealth {
+    background-color: green;
+    padding: 4px 12px 2px 10px;
+    opacity: 0.8;
+    text-align: center;
+    font-family: 'Hind', sans-serif;
+    font-size: 1.1em;
+    position: absolute;
+    right: -5px;
+    top: 5px;
+    color: white;
+}
+
+#playerMessage, #enemyMessage, #chooseAgain {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.gameover {
+    background-image: url("../images/defeat.jpg");
+/   border-color: white;
+    border-style: solid;
+    background-repeat: no-repeat;
+    border-width: 5px;
+    margin: auto;
+    width: 72%;
+    height: 500px;
+    background-size: 100%;
+    position: relative;
+}
+
+.winner {
+    background-image: url("../images/lumpy.jpg");
+/   border-color: white;
+    border-style: solid;
+    background-repeat: no-repeat;
+    border-width: 5px;
+    margin: auto;
+    width: 72%;
+    height: 500px;
+    background-size: 100%;
+    position: relative;
+}
+
+#bigLose, #bigWin {
+    padding: 4px 12px 2px 10px;
+    text-align: right;
+    font-color: green;
+    font-family: 'Bungee', cursive;
+    text-shadow: -1px 0 #ffe63b, 0 3px #ffe63b, 3px 0 #ffe63b, 0 -1px #ffe63b;
+    font-size: 5em;
+    position: absolute;
+    right: 3%;
+    top: 5%;
+    color: white;
+    width: 30%;
+}
+
+.resetButton {
+    position: absolute;
+    right: 45%;
+    top: 85%;
+    font-size: 1.7em;
+}
+
+@media only screen and (max-width: 980px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+
+.maincontent {
+    margin: 0% 6% 0% 6%;
+}
+}
+
+@media only screen and (max-width: 640px) {
+
+    .maincontent {
+    margin: 0% 2% 0% 2%;
+    }
+    .charCard {
+    max-width: 300px;
+    margin: 0px 0px 35px 0px;
+    width: 85%;
+/*    height: 300px;*/
+    }
+    img.cardFace {
+    height: 300px;
+    }
+}
